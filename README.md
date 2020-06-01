@@ -13,6 +13,9 @@ Run bin\Release\netcoreapp3.1\QualtricsV3Api.exe to download a surveys.json file
 Setup Environment Variables and Directories
 
 ```
+Download the release zip from https://github.com/danny-hardun/QualtricsV3SurveyDownloader/releases/tag/1.0.0
+Unzip the release into a folder. The QualtricsV3SurveyDownloader.exe runs the tool after setting up the environment variables below.
+
 Create a directory to store information used by the survey download tool. For example, C:\Users\%user%\Documents\QualtricsDownloader
 
 Set the 'QualtricsDownloadRootDirectory' Environment Variable to the directory above.
@@ -25,8 +28,6 @@ If you have a Qualtrics API client id and secret, set the 'QualtricsClientId' an
 ### Run Downloader Instructions
 
 ```
-Run the program executable at bin\Release\netcoreapp3.1\publish\QualtricsV3SurveyDownloader.exe. It has only been tested on Windows 10.
-
 The first run of the program will generate a surveys.json file in the 'QualtricsDownloadRootDirectory'. Use the results from surveys.json to create a surveys_download.json file in the 'QualtricsDownloadRootDirectory' that instructs the tool which surveys to download and the location to save the final CSV/JSON/XML file for each survey.
 
 Example surveys_download.json:
